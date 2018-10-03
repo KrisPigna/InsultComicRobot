@@ -1,0 +1,94 @@
+.homepage {
+    background-image: url("../../assets/images/intro-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    color: white;
+}
+
+h1 {
+    font-size: 34pt;
+}
+
+.cursor {
+    font-weight: 800;
+    color: green;
+    -webkit-animation: 0.5s blink step-end infinite;
+    -moz-animation: 0.5s blink step-end infinite;
+    -ms-animation: 0.5s blink step-end infinite;
+    -o-animation: 0.5s blink step-end infinite;
+    animation: 0.5s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to { color: transparent }
+    50% { color: green }
+}
+
+@media (max-width: 374px) {
+    .header {
+        margin: auto;
+        width: 80%;
+        padding-top: 40%;
+        text-align: center;
+    }
+    
+    .typewriter {
+        text-align: left;
+        border: 2px solid grey;
+        border-radius: 5%;
+        background-color: rgba(71, 71, 71, 0.9);
+        padding: 1em;
+        height: 50px;
+        width: 90%;
+        margin-top: 40%;
+        margin-bottom: 2em;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 375px) and (max-width: 1024px) {
+    .header {
+        margin: auto;
+        width: 80%;
+        padding-top: 40%;
+        text-align: center;
+    }
+    
+    .typewriter {
+        text-align: left;
+        border: 2px solid grey;
+        border-radius: 5%;
+        background-color: rgba(71, 71, 71, 0.9);
+        padding: 1em;
+        height: 50px;
+        width: 80%;
+        margin: auto;
+        margin-top: 40%;
+        margin-bottom: 2em;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 1025px) {
+    .header {
+        margin: auto;
+        width: 80%;
+        padding-top: 20%;
+        text-align: center;
+    }
+
+    .typewriter {
+        text-align: left;
+        border: 2px solid grey;
+        border-radius: 5%;
+        background-color: rgba(71, 71, 71, 0.9);
+        padding: 1em;
+        height: 50px;
+        margin: auto;
+        width: 55%;
+        margin-bottom: 2em;
+    }
+  }

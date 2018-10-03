@@ -1,0 +1,15 @@
+<div class="upload">
+  <div *ngIf="selectedFile != undefined">
+    {{ selectedFile["name"] }}
+  </div>
+  <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+  <div>
+    <button class="button" *ngIf="!fileSelected" (click)="fileInput.click()">Select Image</button>
+    <div class="button-grid-container">
+      <div class="button-grid" *ngIf="fileSelected">
+        <a class="arrow" (click)="reselectFile()"></a>
+        <button class="button" (click)="onUpload()">Upload!</button>
+      </div>
+    </div>
+  </div>
+</div>

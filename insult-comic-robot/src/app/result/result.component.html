@@ -1,0 +1,10 @@
+<div class="result">
+  <div class="canvas">
+    <canvas #myCanvas></canvas>
+    <button class="new-image" routerLink="">Upload new image</button>
+  </div>
+    <p>{{jokeDisplay}} 
+    <br/>
+    <button class="new-joke" *ngIf="showNext" (click)="nextJoke()">Next joke.</button></p>
+    <span class="robot"></span>
+</div>
